@@ -1,4 +1,47 @@
 <!DOCTYPE html> 
 <html lang="en">
-    <head>Hello</head>
-</html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Assignment 5</title>
+
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="main.css">
+
+    </head>
+
+    <body onload="createColorMenu()">
+
+        <section id="side-menu">
+
+            <button class="menu-button" onClick="addRow()">Add Row</button>
+
+            <button class="menu-button" onClick="addColumn()">Add Column</button>
+
+            <button class="menu-button" onClick="removeRows()">Remove Rows</button>
+
+            <button class="menu-button" onClick="removeColumns()">Remove Columns</button>
+
+            <div class="dropdown">
+
+                <button class="menu-button"> Color Selection</button>
+
+                <select class="color-options" id="drop">
+                </select>
+
+            </div>
+
+            <button class="menu-button" onClick="fillAllUncolored()">Fill All Uncolored Cells</button>
+
+            <button class="menu-button" onClick="fillAllCells()">Fill All Cells</button>
+
+            <button class="menu-button" onClick="clearAllCells()">Clear All Cells</button>
+
+        </section>
+    
+        <table id="grid"></table>
+        
+    </body>
+    
+    </html>
